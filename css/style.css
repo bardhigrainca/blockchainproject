@@ -47,7 +47,7 @@ button{
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    box-shadow: 0px 0px 30px #bb14e3;
+    box-shadow: 0px 0px 30px rgba(187, 20, 227, 0.6);
 
 }
 button:hover {
