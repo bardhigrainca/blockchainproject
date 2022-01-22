@@ -12,7 +12,6 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  overflow: hidden;
 }
 .wrapper {
   height: 270px;
@@ -91,7 +90,6 @@ nav ul li ul li a:hover {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 }
-
 button {
   font-weight: 400;
   font-size: 16px;
@@ -113,7 +111,6 @@ button:hover {
   font-family: "Inter";
   font-weight: 300;
 }
-
 .maintextwhite {
   display: flex;
   justify-content: center;
@@ -125,7 +122,11 @@ button:hover {
   text-align: center;
 }
 section.section1 {
-  height: 90vh;
+  height: 100vh;
+}
+section.section2 {
+  height: 100vh;
+  color: white;
 }
 .particlesCSS {
   position: absolute;
