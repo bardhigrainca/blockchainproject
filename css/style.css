@@ -1,60 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #200a4c;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: "Inter";
 }
-li, a, button, h3 {
-font-family: "Inter";
-font-weight: 400;
-font-size: 16px;
-color: rgb(255, 255, 255);
-text-decoration: none;
-
+body {
+  background-color: #200a4c;
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
-
-header{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 30px 10%;
-}
-.logo{
-    width: 150px;
-    height: 100%;
-    cursor: pointer;
-}
-.nav__links{
-    list-style: none;
+.wrapper {
+  height: 270px;
+  width: 100%;
+  background-image: url(../images/svg/background-section1.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.nav__links li{
-    display: inline;
-    padding: 0px 20px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
 }
-.nav__links li a {
-    transition: all 0.3s ease 0s;
-}
-.nav__links li a:hover{
-    color: #bb14e3;
-}
-button{
-    padding: 20px 35px;
-    background: linear-gradient(to right, #1520e3 , #bb14e3);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    box-shadow: 0px 0px 30px rgba(187, 20, 227, 0.6);
 
+nav ul {
+  float: left;
+}
+nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 24px 14px;
+  color: white;
+  font-weight: 300;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #bb14e3;
+}
+
+nav ul li ul {
+  display: block;
+  position: absolute;
+  background: hsl(0 0% 100% / 0.1);
+  backdrop-filter: blur(1rem);
+  border-radius: 0px 10px 10px 10px;
+  visibility: hidden;
+}
+nav ul li:hover ul {
+  visibility: visible;
+}
+
+nav ul li ul li {
+  width: 280px;
+  padding: 10px;
+}
+nav ul li ul li a {
+  padding: 8px 14px;
+}
+nav ul li ul li a:hover {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 170px;
+  height: 100%;
+  cursor: pointer;
+}
+button {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 20px 41px;
+  background: linear-gradient(to right, #1520e3, #bb14e3, #1520e3);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-size: 200%;
+  box-shadow: 0px 0px 30px rgba(187, 20, 227, 0.5);
+  transition: 0.6s;
 }
 button:hover {
-    background-position: right center;
-    
+  background-position: right;
 }
-.getintouch{
-    font-family: "Inter";
-    font-weight: 300;
+.getintouch {
+  font-family: "Inter";
+  font-weight: 300;
+}
+
+.maintextwhite {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  /* margin: 160px 31% 0px 34%; */
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+section.section1 {
+  height: 90vh;
 }
