@@ -29,7 +29,6 @@ header {
   align-items: center;
   padding: 50px 10%;
 }
-
 nav ul {
   float: left;
 }
@@ -114,18 +113,26 @@ button:hover {
   font-weight: 300;
 }
 
-.maintextwhite {
+.section1 {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
-  /* margin: 160px 31% 0px 34%; */
+}
+
+.maintextwhite {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 800;
   text-align: center;
 }
 section.section1 {
   height: 90vh;
+}
+.mobilephone {
+  position: absolute;
+  margin-top: 175px;
+  padding: 20px;
+  width: 500px;
+  height: 600px;
 }
 .particlesCSS {
   position: absolute;
