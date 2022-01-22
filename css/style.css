@@ -80,6 +80,18 @@ nav ul li ul li a:hover {
   height: 100%;
   cursor: pointer;
 }
+.arrowdown {
+  display: flex;
+  margin-top: 30%;
+  position: absolute;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 button {
   font-weight: 400;
   font-size: 16px;
