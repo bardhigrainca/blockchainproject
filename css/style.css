@@ -134,6 +134,42 @@ section.section1 {
   width: 750px;
   height: 600px;
 }
+
+.circles1left {
+  position: absolute;
+  width: 300px;
+  margin: 100px 0px 0px -800px;
+  opacity: 0.6;
+}
+.circles2right {
+  position: absolute;
+  width: 300px;
+  margin: 300px 0px 0px 800px;
+  opacity: 0.8;
+  transform: rotate(175deg);
+}
+.circles3right {
+  position: absolute;
+  width: 100px;
+  margin: 10px -40px -40px 670px;
+  opacity: 0.5;
+}
+.circles4right {
+  position: absolute;
+  width: 100px;
+  margin: -90px -40px -40px -590px;
+  opacity: 0.3;
+  z-index: -1;
+}
+.circles5right {
+  position: absolute;
+  width: 150px;
+  margin: 500px -40px -40px 270px;
+  opacity: 0.3;
+  z-index: -1;
+  transform: rotate(15deg);
+}
+
 .particlesCSS {
   position: absolute;
   margin: -250px 50px 0 0;
