@@ -48,6 +48,9 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: #bb14e3;
+  background: rgba(255, 255, 255, 1);
+  backdrop-filter: blur(1rem);
+  border-radius: 10px 10px 0px 0px;
 }
 
 nav ul li ul {
@@ -82,6 +85,7 @@ nav ul li ul li a:hover {
 .arrowdown {
   display: flex;
   margin-top: 30%;
+  margin-left: 3px;
   position: absolute;
   border: solid rgb(255, 255, 255);
   border-width: 0 1px 1px 0;
@@ -89,6 +93,7 @@ nav ul li ul li a:hover {
   padding: 3px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  z-index: 1;
 }
 
 button {
