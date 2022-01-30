@@ -7,20 +7,11 @@
   font-weight: 400;
   font-family: "Inter";
 }
-.thin {
-  font-family: "Inter";
-  font-weight: 300;
-}
-.bold {
-  font-family: "Inter";
-  font-weight: 700;
-}
 body {
   background-color: #200a4c;
   height: 100%;
   width: 100%;
   margin: 0;
-  overflow: hidden;
 }
 .wrapper {
   height: 270px;
@@ -30,9 +21,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
-}
-a {
-  text-decoration: none;
 }
 
 header {
@@ -58,11 +46,22 @@ nav ul li a {
   font-weight: 300;
   transition: 0.3s;
 }
+
 nav ul li a:hover {
   color: #bb14e3;
   background: rgba(255, 255, 255, 1);
   backdrop-filter: blur(1rem);
   border-radius: 10px 10px 0px 0px;
+}
+
+li.has-dropdown:hover {
+  background: rgba(255, 255, 255, 1);
+  backdrop-filter: blur(1rem);
+  border-radius: 10px 10px 0px 0px;
+}
+
+li.has-dropdown:hover > a {
+  color: #bb14e3;
 }
 
 nav ul li ul {
@@ -129,34 +128,8 @@ button:hover {
   font-family: "Inter";
   font-weight: 300;
 }
-.AppleStore {
-  display: block;
-  margin-left: 44%;
-  font-size: 20px;
-}
-.applelogo {
-  float: left;
-  width: 35px;
-  height: auto;
-  margin-right: 14px;
-}
-.downloadonthe {
-  font-size: 15px;
-  float: right;
-}
 
 .section1 {
-  display: block;
-  justify-content: center;
-}
-.section2 {
-  display: block;
-  justify-content: center;
-}
-section.section2 {
-  height: 90vh;
-}
-.widgets {
   display: flex;
   justify-content: center;
 }
@@ -167,19 +140,12 @@ section.section2 {
   font-weight: 800;
   text-align: center;
 }
-.maintextwhite2 {
-  padding: 20px;
-  color: white;
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
-}
 section.section1 {
   height: 90vh;
 }
 .mobilephone {
   position: absolute;
-  margin-top: 160px;
+  margin-top: 155px;
   padding: 20px;
   width: 750px;
   height: 600px;
