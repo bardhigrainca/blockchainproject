@@ -8,11 +8,11 @@
   font-family: "Inter";
 }
 body {
+  display: fixed;
   background-color: #200a4c;
   height: 100%;
   width: 100%;
   margin: 0;
-  overflow: hidden;
 }
 
 header {
@@ -154,7 +154,6 @@ button:hover {
   z-index: 2;
 }
 .mobilephone {
-  position: fixed;
   width: 33vw;
   height: auto;
   align-items: center;
@@ -199,7 +198,22 @@ section.section1 {
   z-index: -1;
   transform: rotate(15deg);
 }
-
+.circles6right {
+  position: absolute;
+  width: 250px;
+  margin: 950px -40px -40px 770px;
+  opacity: 0.7;
+  z-index: -1;
+  transform: rotate(-70deg);
+}
+.circles7left {
+  position: absolute;
+  width: 450px;
+  margin: 1450px -40px -40px 970px;
+  opacity: 0.4;
+  z-index: -1;
+  transform: rotate(-160deg);
+}
 .particlesCSS {
   position: absolute;
   margin: -250px 50px 0 0;
@@ -207,6 +221,144 @@ section.section1 {
   height: 650px;
   z-index: -2;
 }
+
+.section2 {
+  height: 90vh;
+}
+.primarytext-sc2 {
+  font-weight: 300;
+  color: white;
+  font-size: 1.2vw;
+  text-align: center;
+}
+.secondarytext-sc2 {
+  font-weight: 800;
+  color: white;
+  font-size: 2.2vw;
+  text-align: center;
+}
+.allcards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  padding-top: 20px;
+}
+
+.container .card {
+  position: relative;
+  width: 321px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(105, 32, 250, 0.05),
+    inset -5px -5px 5px rgba(51, 16, 122, 0.5),
+    5px 5px 5px rgba(105, 32, 250, 0.05), -5px -5px 5px rgba(51, 16, 122, 0.5);
+  border-radius: 15px;
+  margin: 30px;
+}
+.container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2b1867;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.container .card:hover .box {
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(187, 20, 227, 0.3);
+  background: linear-gradient(45deg, #1520e3, #bb14e3);
+}
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+.container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(0, 0, 0, 0.03);
+  transition: 0.5s;
+  pointer-events: none;
+}
+.container .card:hover .box .content h2 {
+  color: rgba(0, 0, 0, 0.05);
+}
+.container .card .box .content h3 {
+  font-weight: 800;
+  font-size: 1.5em;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  padding: 15px;
+}
+.container .card:hover .box .content h3,
+.container .card:hover .box .content p {
+  color: white;
+}
+.container .card .box .content p {
+  font-size: 1em;
+  font-weight: 300;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+}
+.container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #03a9f4;
+  margin-top: 15px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.container .card .box .content a {
+  background: #bb14e3;
+}
+.section3 {
+  height: 90vh;
+}
+.content-section3 {
+  display: flex;
+  justify-content: space-around;
+}
+.title-section3 h1 {
+  font-size: 4.5vh;
+  font-weight: 600;
+}
+.title-section3 {
+  padding-bottom: 16px;
+}
+.text-section3 {
+  align-items: center;
+  color: white;
+}
+.list-section3 {
+  list-style-type: none;
+  align-content: space-between;
+}
+.list-section3 li {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.computer {
+  margin-top: -125px;
+  margin-left: -540px;
+  position: relative;
+  width: 90vh;
+}
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   body {
@@ -214,7 +366,6 @@ section.section1 {
     height: 100%;
     width: 100%;
     margin: 0;
-    overflow: hidden;
   }
   .logo {
     margin-left: -35px;
@@ -292,6 +443,7 @@ section.section1 {
     z-index: -1;
     transform: rotate(15deg);
   }
+
   .secondarytext {
     font-weight: 400;
     color: white;
@@ -308,7 +460,6 @@ section.section1 {
     z-index: 2;
   }
   .mobilephone {
-    position: fixed;
     width: 33.3vw;
     height: auto;
   }
@@ -320,7 +471,6 @@ section.section1 {
     height: 100%;
     width: 100%;
     margin: 0;
-    overflow: hidden;
   }
   .logo {
     margin-left: -35px;
@@ -413,7 +563,6 @@ section.section1 {
     z-index: 2;
   }
   .mobilephone {
-    position: fixed;
     width: 33.3vw;
     height: auto;
   }
