@@ -214,6 +214,14 @@ section.section1 {
   z-index: -1;
   transform: rotate(-160deg);
 }
+.circles8left {
+  position: absolute;
+  width: 350px;
+  margin: 1450px -40px -40px -650px;
+  opacity: 0.4;
+  z-index: -1;
+  transform: rotate(30deg);
+}
 .particlesCSS {
   position: absolute;
   margin: -250px 50px 0 0;
@@ -357,6 +365,10 @@ section.section1 {
   margin-left: -540px;
   position: relative;
   width: 90vh;
+}
+.text-center {
+  text-align: center;
+  color: white;
 }
 
 /* iPads (portrait and landscape) ----------- */
